@@ -1,0 +1,17 @@
+body{
+	background-color:#ebebe0;	
+}
+	
+#content {
+	margin-left:400px	;
+    border-color:blue;
+	border-top:10px; 
+}
+
+.box{
+	width:500px;
+	padding:10px;
+	margin:20px;
+	padding-left:100px;
+	border:1px solid white;
+}
