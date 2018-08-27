@@ -4,23 +4,88 @@
 	<meta charset = "utf-8"/>
 	<title>My Website</title>
 	<link rel="stylesheet" href = "style.css"/>
+	<link rel="stylesheet" href = "menu.css"/>
+	<link rel="stylesheet" href = "form.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+		    x.style.display = "none";
+		  } else {
+		    x.style.display = "block";
+		  }
+		}
+	</script>
 </head>
 <body>
-	<header>
-		Company
-	</header>
-	<nav>
-		<ul>
-			<li>Home</li>
-			<li>Services</li>
-			<li>career</li>
-			<li>Help</li>
-			<li>Contact</li>
-		</ul>
-	</nav>
-	<footer>
-		@copy rights reserved
-	</footer>
-
+	<div id = "wrapper">	
+		<div class = "page" id = "page1">
+			<ul class="topnav">
+			  <li><a class="active" href="default.asp">Home</a></li>
+			  <li><a href="news.asp">News</a></li>
+			  <li><a href="contact.asp">Contact</a></li>
+			  <li><a href="about.asp">About</a></li>
+			  <input type="text" placeholder="Search..">
+			</ul>
+		</div>
+		<div class = "page" id = "page2">
+			<div class ="page_2_box">
+				<h2 style="">Why Us</h2>
+				<p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			</div>
+		</div>
+		<div class = "page" id = "page3">
+			<div class="flex-container2">
+		    	<div class = "box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		    	</div>
+			    <div class = "box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+			    </div>
+				<div class = "box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</div>
+			</div>
+		</div>
+		<div class = "page" id = "page4">
+				<div class="container">
+				  <form action="/action_page.php">
+				    <div class="row">
+				      <div class="col-25">
+				        <label for="fname">First Name</label>
+				      </div>
+				      <div class="col-75">
+				        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+				      </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-25">
+				        <label for="lname">Last Name</label>
+				      </div>
+				      <div class="col-75">
+				        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				      </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-25">
+				        <label for="email">E-mail</label>
+				      </div>
+				      <div class="col-75">
+				        <input type="text" id="lname" name="lastname" placeholder="Email-address..">
+				      </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-25">
+				        <label for="lname">Contact NUmber</label>
+				      </div>
+				      <div class="col-75">
+				        <input type="text" id="number" name="number" placeholder="Phone-number..">
+				      </div>
+				    </div>
+				    <div class="row">
+				      <input type="submit" value="Submit">
+				    </div>
+				  </form>
+				</div>
+		</div>
+	</div>
 </body>
 </html>
